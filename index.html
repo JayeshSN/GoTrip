@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-Trip</title>
+    <!-- Css links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        img{
+            max-width: 100%;
+            max-height: 100%;;            
+        }
+
+        .card{
+          border: none;
+        }
+
+        .img-set{
+          width: 85%;
+          height: 80%;
+         
+        }
+
+        .img-set-small{
+          width: 15%;
+          height: 10%;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <!-- <h3 class="me-3 fs-5">Go-Trip</h3> -->
+          <img src="./Images/Screenshot 2024-07-28 104717.png" alt="Go Trip Logo" width="4%">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 p-1" type="search" placeholder="Destination, Hotel" aria-label="Search">
+                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+              </form>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item ms-4">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link active" href="#">Categories</a>
+              </li>
+              <li class="nav-item ms-4 ">
+                <a class="nav-link active" href="#" role="button" >
+                  Destination
+                </a>
+                <li class="nav-item ms-4 ">
+                    <a class="nav-link active" href="#" role="button" >
+                      Blog
+                    </a>
+                    <li class="nav-item ms-4 ">
+                        <a class="nav-link active" href="#" role="button" >
+                          Pages
+                        </a>
+                        <li class="nav-item ms-4 ">
+                            <a class="nav-link active" href="#" role="button" >
+                              Contact
+                            </a>
+
+               
+              </li>
+              <li class="nav-item ms-4 dropdown">
+                <a class="nav-link dropdown-toggle ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  USD
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  United Kingdom
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <button type="button" class="btn btn-primary ms-2">Become An Expert</button>
+              <button type="button" class="btn btn-light btn-outline-primary ms-2">Sign in/ Register</button>
+             
+            </ul>
+                
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar End -->
+
+
+      <!-- Showcase Start -->
+
+<!-- 
+        <div class="col-md position-relative ">
+
+      <img src="./Images/pexels-dreamlensproduction-2450296.jpg" alt="Discover world">
+      <div class="position-absolute">
+        <h3>Hello</h3>
+        
+
+
+      </div> -->
+
+
+      <!-- </div> -->
+       <!-- Showcase end -->
+       <!-- <img src="./Images/pexels-dreamlensproduction-2450296.jpg" alt="showcase image" height="50%"> -->
+        
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+
+        </div>
+      
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+      </div>
+
+
+
+       <!-- Special Offers Start -->
+
+    <div class="container-md">
+        <h3 class="text-center mt-5 mb-5">Special Offers</h3>
+        <p class="text-center mb-5">The popular destination have a lot to offer</p>
+        <div class="col-md-12">
+            <div class="row">
+
+                    <div class="col-md-4 ">
+                        <div class="card text-bg-dark">
+                            <img src="./Images/to-do.jpg" class="card-img w-100" alt="to-do on trip" style="height: 276px;">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title text-capitalize">Things TO do on your trip</h5>
+                              <h5 class="card-title text-capitalize">Your Trip</h5>
+                              <button type="button" class="btn btn-light">Experience</button>
+
+                            
+                              
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div class="card text-bg-dark">
+                            <img src="./Images/Book now.jpg" class="card-img" alt="Book-now">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title text-capitalize">Let Your Curiousity</h5>
+                              <h5 class="card-title text-capitalize">Do the Booking</h5>
+                              <button type="button" class="btn btn-light">Learn More</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="card text-bg-dark">
+                            <img src="./Images/Sale (1).jpg" class="card-img" alt="sale" style="height: 276px;">
+                            <div class="card-img-overlay">
+                                <p class="card-tile text-capitalize">Enjoy Summer delas</p>
+                              <h5 class="card-title">up to 70% discount</h5>
+                              <button type="button" class="btn btn-light">Learn More</button>
+                            
+                              
+                            </div>
+                          </div>
+                    </div>
+             
+             
+                   
+             </div>
+
+        </div>
+    </div>
+        <!-- Special offers end -->
+
+
+
+        <!-- Why choose us Start  -->
+
+        <div class="container-md mt-5">
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <i class="fa-solid fa-thumbs-up"></i>
+
+                        <h5 class="text-center text-capitalize">Best Price Guarrantee</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, reprehenderit praesentium sed culpa rerum et.</p>
+
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fa-solid fa-thumbs-up text-center"></i>
+
+                        <h5 class="text-center text-capitalize">Easy & Quick Booking</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, reprehenderit praesentium sed culpa rerum et.</p>
+
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fa-solid fa-thumbs-up text-center"></i>
+
+                        <h5 class="text-center text-capitalize">Customer care 24/7</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, reprehenderit praesentium sed culpa rerum et.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Why choose us end -->
+
+        <!-- Top Destinations Start -->
+        <div class="container-md mb-5 mt-5">
+            <h3 class="text-center mt-5 mb-5">Top Destinations</h3>
+            <p class="text-center mb-5">The popular destination have a lot to offer</p>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-bg-dark">
+                            <img src="./Images/LA.jpg" class="card-img" alt="Los angeles" height="425px">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title text-capitalize">Los Angeles</h5>
+                              <p class="card-text text-capitalize">1714 Properties</p>
+                             
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-bg-dark">
+                            <img src="./Images/London.jpg" class="card-img" alt="London">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title text-capitalize">London</h5>
+                              <p class="card-text text-capitalize">1714 Properties</p>
+                             
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-bg-dark">
+                            <img src="./Images/Reykjavik.jpg" class="card-img" alt="Reykjavik" height="425px">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title text-capitalize">Reykjavik</h5>
+                              <p class="card-text text-capitalize">1714 Properties</p>
+                             
+                            </div>
+                          </div>
+                          <!-- <p>hello</p> -->
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="card text-bg-dark">
+                            <img src="./Images/Paris.jpg" class="card-img" alt="Paris" height="425px">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title text-capitalize">Paris</h5>
+                              <p class="card-text text-capitalize">1714 Properties</p>
+                             
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-bg-dark">
+                            <img src="./Images/amsterdam.jpg" class="card-img" alt="amsterdam" height="425px">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title text-capitalize">amsterdam</h5>
+                              <p class="card-text text-capitalize">1714 Properties</p>
+                             
+                            </div>
+                          </div>
+                    </div>
+                   
+                    <div class="col-md-3">
+                        <div class="card text-bg-dark">
+                            <img src="./Images/Istanbul.jpg" class="card-img" alt="Istanbul" height="425px">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title text-capitalize">Istanbul</h5>
+                              <p class="card-text text-capitalize">1714 Properties</p>
+                             
+                            </div>
+                          </div>
+                          <!-- <p>hello</p> -->
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        
+         <!-- Top Destinations end -->
+       
+         <!-- Recommended Hotel start -->
+         
+          <div class="container-md">
+            <h3 class=" mt-3 ">Recommended Hotels </h3>
+         <p class=" mb-5">The popular destination have a lot to offer <span style="margin-left: 920px;">   <button type="button" class="btn btn-outline-dark">More </button>
+         </span> </p>
+        
+            <div class="col-md-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-md-3">
+                      <div class="card h-100">
+                        <div class="image position-relative">
+
+                        <img src="./Images/Hotel-1.jpg" class="card-img-top" alt="hotel image" height="203px">
+                      </div>
+
+                        <div class="text-uppercase position-absolute bg-primary text-light fw-normal" style="top: 20px;">BreakFast Included</div>
+                        <div class="card-body">
+                          <h5 class="card-title text-capitalize">The Mont Calm at Brewery London City</h5>
+                          <p class="card-text text-capitalize">westminister borough london.</p>
+                          <p class="fw-bold"><span class="badge text-bg-primary">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                          <p>Starting from <span class="text-primary fw-bold">US$72</span></p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card h-100 position-relative">
+                        <img src="./Images/Hotel-2.jpg" class="card-img-top" alt="hotel-2 image">
+                        <!-- <div class="text-uppercase position-absolute bg-primary fw-bold" style="top: 20px;">BreakFast Included</div> -->
+
+                        <div class="card-body">
+                          <h5 class="card-title text-capitalize">Staycity Aparthotels deptforf bridge station</h5>
+                          <p class="card-text text-capitalize">ciutet villa , Barcelona</p>
+                          <p class="fw-bold"><span class="badge text-bg-primary">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                          <p>Starting from <span class="text-primary fw-bold">US$72</span></p>
+                         
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card h-100 position-relative">
+                        <img src="./Images/Hotel-3.jpg" class="card-img-top" alt="Hotel-3 image">
+                        <div class="text-uppercase position-absolute bg-primary fw-normal text-light" style="top: 20px;">Best Seller</div>
+
+                        <div class="card-body">
+                          <h5 class="card-title text-capitalize">The Westin newyork at time square</h5>
+                          <p class="card-text text-capitalize"> Manhathan , newyork</p>
+                          <p class="fw-bold"><span class="badge text-bg-primary">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                          <p>Starting from <span class="text-primary fw-bold">US$72</span></p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 position-relative">
+                          <img src="./Images/Hotel-4.jpg" class="card-img-top" alt="Hotel-4 images">
+                        <div class="text-uppercase position-absolute text bg-warning fw-normal" style="top: 20px;">Top Rated</div>
+
+                          <div class="card-body">
+                            <h5 class="card-title">Double Tree By Hilton Hotel New york TiemSquare West</h5>
+                            <p class="card-text text-capitalize">vaticona prati ,Rome</p>
+                            <p class="fw-bold"><span class="badge text-bg-primary">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                            <p>Starting from <span class="text-primary fw-bold">US$72</span></p>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+            </div>
+          </div>
+          <!-- Recommended Hotel End -->
+
+          <!-- Most Popular tours Start -->
+
+          
+          <div class="container-md">
+            <h3 class=" mt-5 ">Most Popular Tours </h3>
+         <p class=" mb-5">Interdum et malesuda fames ac ante ipsum<span style="margin-left: 920px;">   <button type="button" class="btn btn-outline-dark">More</button>
+         </span> </p>
+        
+            <div class="col-md-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-md-3">
+                      <div class="card h-100">
+                        <div class="image position-relative">
+
+                        <img src="./Images/stonhenge.jpg" class="card-img-top" alt="stonhenge" height="203px">
+                      </div>
+
+                        <div class="text-uppercase position-absolute bg-primary text-light fw-normal" style="top: 20px;">Likely to sell out*</div>
+                        <div class="card-body">
+                          <p class="card-text text-capitalize">16+ hours .Full-day</p>
+                          <h5 class="card-title text-capitalize">Stonhenge windsor castle and bath with pub lunch in lacock</h5>
+                          <p class="card-text text-capitalize">westminister borough london.</p>
+                          
+                          <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 3,014 reviews</span> 
+                           <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card h-100 position-relative">
+                        <img src="./Images/westminster.jpg" class="card-img-top" alt="westminister image">
+                        <!-- <div class="text-uppercase position-absolute bg-primary fw-bold" style="top: 20px;">BreakFast Included</div> -->
+
+                        <div class="card-body">
+                          <p class="card-text text-capitalize">9+ hours Attraction & museums</p>
+                          <h5 class="card-title text-capitalize text-decoration-underline ">Westminster Walking Tour & abbey entry</h5>
+                          <p class="card-text text-capitalize">Ciutat vella , Barcelona</p>
+                          <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 3,014 reviews</span> 
+                            <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                         
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card h-100 position-relative">
+                        <img src="./Images/High speed Thames.jpg" class="card-img-top" alt="High speed thames image" height="203px">
+                        <div class="text-uppercase position-absolute bg-primary fw-normal text-light" style="top: 20px;">Best Seller</div>
+
+                        <div class="card-body">
+                          <p class="card-text text-capitalize">45-50 Minutes .private and luxury</p>
+                          <h5 class="card-title text-capitalize">High Speed Thames River RIB Cruise in London</h5>
+                          <p class="card-text text-capitalize"> Manhathan , newyork</p>
+                          <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 3,014 reviews</span> 
+                            <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 position-relative">
+                          <img src="./Images/edinburg-walking-tour.jpg" class="card-img-top" alt="edinburg-walking-tour images" height="203px">
+                        <div class="text-uppercase position-absolute text bg-warning fw-normal" style="top: 20px;">Top Rated</div>
+
+                          <div class="card-body">
+                            <p class="card-text text-capitalize">94+ days Bus tour</p>
+                            <h5 class="card-title">Edinburgh darkside walking tour: mysterious,murder and legends</h5>
+                            <p class="card-text text-capitalize">vaticona prati ,Rome</p>
+                            <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 3,014 reviews</span> 
+                              <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+            </div>
+          </div>
+
+
+           <!-- Most popular tours end -->
+
+
+           <!-- Trending Activity Start  -->
+           <div class="container-md">
+            <h3 class=" mt-5 ">Trending Activities </h3>
+         <p class=" mb-5">Interdum et malesuda fames ac ante ipsum<span style="margin-left: 920px;">   <button type="button" class="btn btn-outline-dark">More</button>
+         </span> </p>
+        
+            <div class="col-md-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-md-3">
+                      <div class="card h-100">
+                        <div class="image position-relative">
+
+                        <img src="./Images/volcano-crator.jpg" class="card-img-top" alt="volcano-crator" height="203px">
+                      </div>
+
+                        <div class="text-uppercase position-absolute bg-primary text-light fw-normal" style="top: 20px;">Likely to sell out*</div>
+                        <div class="card-body">
+                          <p class="card-text text-capitalize">9+ hours</p>
+                          <h5 class="card-title text-capitalize">Golden Circle Kerid volcanic crater and blue lagoond ay trip</h5>
+                          <p class="card-text text-capitalize">westminister borough london.</p>
+                          
+                          <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 94 reviews</span> 4.82
+                           <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card h-100 position-relative">
+                        <img src="./Images/bike-tour.jpg" class="card-img-top" alt="bike-tour image">
+                        <!-- <div class="text-uppercase position-absolute bg-primary fw-bold" style="top: 20px;">BreakFast Included</div> -->
+
+                        <div class="card-body">
+                          <p class="card-text text-capitalize">6+ hours</p>
+                          <h5 class="card-title text-capitalize text-decoration-underline ">Edinburgh Sky to sea bike tour by manual or E-bike</h5>
+                          <p class="card-text text-capitalize">Ciutat vella , Barcelona</p>
+                          <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 94 reviews</span> 4.82
+                            <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                         
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card h-100 position-relative">
+                        <img src="./Images/glacier cave.jpg" class="card-img-top" alt="glacier cave image" height="203px">
+                        <div class="text-uppercase position-absolute bg-primary fw-normal text-light" style="top: 20px;">Best Seller</div>
+
+                        <div class="card-body">
+                          <p class="card-text text-capitalize">6+ hours</p>
+                          <h5 class="card-title text-capitalize">Natural cystal blue ice cave tour of vatnajokull glacier</h5>
+                          <p class="card-text text-capitalize"> Manhathan , newyork</p>
+                          <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 94 reviews</span> 4.82
+                            <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 position-relative">
+                          <img src="./Images/minibus-tour-rejavik.jpg" class="card-img-top" alt="minibus-tour-rejavik images" height="203px">
+                        <div class="text-uppercase position-absolute text bg-warning fw-normal" style="top: 20px;">Top Rated</div>
+
+                          <div class="card-body">
+                            <p class="card-text text-capitalize">6+ hours</p>
+                            <h5 class="card-title">Soth coast full day tour by minibus from Reykjavik</h5>
+                            <p class="card-text text-capitalize">vaticona prati ,Rome</p>
+                            <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 94 reviews</span> 4.82
+                              <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+            </div>
+          </div>
+
+
+           <!-- Trending Actvity End -->
+
+
+           <!-- Featured Hotel Rentals Start -->
+
+           <div class="container-md">
+            <h3 class=" mt-3 ">Featured Holiday Rentals </h3>
+         <p class=" mb-5">Interdum et malesuda fames ac ante ipsum <span style="margin-left: 920px;">   <button type="button" class="btn btn-outline-dark">More</button>
+         </span> </p>
+        
+            <div class="col-md-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-md-3">
+                      <div class="card h-100">
+                        <div class="image position-relative">
+
+                        <img src="./Images/Luxury-with-private=garden.jpg" class="card-img-top" alt="Luxury-with-private garden image" height="203px">
+                      </div>
+
+                        <!-- <div class="text-uppercase position-absolute bg-primary text-light fw-normal" style="top: 20px;">BreakFast Included</div> -->
+                        <div class="card-body">
+                          <p class="card-text text-capitalize">Westminster borough, london</p>
+                          <h5 class="card-title text-capitalize">Luxury new Apartment with private garden</h5>
+                          <p class="card-text text-capitalize">2 guests.1 bedroom.1 bed</p>
+                          <p class="fw-bold"><span class="badge text-bg-primary">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                          <p><span class="text-primary fw-bold">US$72</span>/ per night</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card h-100 position-relative">
+                        <img src="./Images/one-bedroom-luxury.jpg" class="card-img-top" alt="one bedrrom luxury image" height="203px">
+                        <!-- <div class="text-uppercase position-absolute bg-primary fw-bold" style="top: 20px;">BreakFast Included</div> -->
+
+                        <div class="card-body">
+                          <p class="card-text text-capitalize">ciutat vella , Barcelona</p>
+
+                          <h5 class="card-title text-capitalize">Premium one bedroom luxury living in the heart of mayfair</h5>
+                          <p class="card-text text-capitalize">2 guests . 1 bedroom . 1 bed</p>
+                          <p class="fw-bold"><span class="badge text-bg-primary">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                          <p><span class="text-primary fw-bold">US$72</span>/ per night</p>
+                         
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card h-100 position-relative">
+                        <img src="./Images/style-charm-camberwell.jpg" class="card-img-top" alt="style-charm-camberwell luxury image" height="204px">
+                        <div class="text-uppercase position-absolute bg-primary fw-normal text-light" style="top: 20px;">Best Seller</div>
+
+                        <div class="card-body">
+                          <p class="card-text text-capitalize">Manhattan,New York</p>
+
+                          <h5 class="card-title text-capitalize">Style Charm & comfort in camberwell</h5>
+                          <p class="card-text text-capitalize">2 guests . 1 bedroom . 1 bed</p>
+                          <p class="fw-bold"><span class="badge text-bg-primary">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                          <p><span class="text-primary fw-bold">US$72</span>/ per night</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 position-relative">
+                          <img src="./Images/maylebone-with-wifi.jpg" class="card-img-top" alt="Marlebone-Oxford images" height="203px">
+                        <div class="text-uppercase position-absolute text bg-warning fw-normal" style="top: 20px;">Top Rated</div>
+
+                          <div class="card-body">
+                            <h5 class="card-title">Marlebone-Oxford Street 1 bed apt with wifi</h5>
+                            <p class="card-text text-capitalize">vaticona prati ,Rome</p>
+                            <p class="fw-bold"><span class="badge text-bg-primary">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                            <p><span class="text-primary fw-bold">US$72</span>/ per night</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+            </div>
+          </div>
+
+           <!-- Featured Holiday Rentals End -->
+
+           <!-- Popular Car Hire  Start -->
+
+   <div class="container-md">
+            <h3 class=" mt-3 ">Popular Car Hire </h3>
+              <p class=" mb-5">The popular destination have a lot to offer <span style="margin-left: 920px;">   <button type="button" class="btn btn-outline-dark">More </button>
+              </span> </p>
+        
+            <div class="col-md-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                 
+                        <div class="col-md-3">
+                          <div class="card h-50" style="border: 1px solid #ccc;">
+                            <div class="image position-relative text-center pt-1">
+    
+                            <img src="./Images/Mercedes.jpg" class="card-img-top img-set mt-2 mb-1" alt="Mercedes image" height="144px" style="height: 144.4px;">
+                          </div>
+                          
+                            <img src="./Images/./car-logos/Mercedes-logo2.jpg" alt="Mercedes logo" class="img-set-small ms-4 mt-4">
+                        </div>
+    
+                            <div class="card-body">
+                              
+                              <p class="card-text text-capitalize">Healthrow Airport .<span class="text-uppercase">luxury</span></p>
+
+                              <h5 class="card-title ">Mercedes Benz E-class <span class="fw-normal">or similar</span></h5>
+                              <p class="text-dark mt-2"><i class="fa-solid fa-user"></i><span class="ms-2">4</span><i class="fa-solid fa-briefcase ms-2"></i><span class="ms-2">1</span><i class="fa-solid fa-car ms-2"></i><span class="ms-2">Automatic</span> <i class="fa-solid fa-gauge-simple-high ms-2"></i><span class="ms-2">Unlimited</span></p>
+                              <p class="fw-bold"><span class="badge text-bg-warning">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                              <p>Starting from <span class="text-primary fw-bold">US$72</span></p>
+    
+                           </div>
+    
+                            
+    
+                            
+    
+                            
+                            </div>
+
+                            <div class="col-md-3">
+                              <div class="card h-50" style="border: 1px solid #ccc;">
+                                <div class="image position-relative text-center pt-1">
+        
+                                <img src="./Images/Jaguar.jpg" class="card-img-top img-set mt-2" alt="Jaguar image">
+                              </div>
+                              
+                                <img src="./Images/./car-logos/Jaguar-logo.jpg" alt="Jaguar logo" class="img-set-small ms-4">
+                            </div>
+        
+                                <div class="card-body">
+                                    
+                              <p class="card-text text-capitalize">Healthrow Airport .<span class="text-uppercase">SUV</span></p>
+
+                              <h5 class="card-title ">Jaguar F-Pace <span class="fw-normal">or similar</span></h5>
+                              <p class="text-dark mt-2"><i class="fa-solid fa-user"></i><span class="ms-2">4</span><i class="fa-solid fa-briefcase ms-2"></i><span class="ms-2">1</span><i class="fa-solid fa-car ms-2"></i><span class="ms-2">Automatic</span> <i class="fa-solid fa-gauge-simple-high ms-2"></i><span class="ms-2">Unlimited</span></p>
+                              <p class="fw-bold"><span class="badge text-bg-warning">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                              <p>Starting from <span class="text-primary fw-bold">US$72</span></p>
+        
+                               </div>
+        
+                                
+        
+                                
+        
+                                
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="card h-50" style="border: 1px solid #ccc;">
+                                    <div class="image position-relative text-center pt-1">
+            
+                                    <img src="./Images/Volvo.jpg" class="card-img-top img-set mt-2" alt="Volvo image">
+                                  </div>
+                                  
+                                    <img src="./Images/./car-logos/Volvo-logo.jpg" alt="Volvo logo" class="img-set-small ms-4">
+                                </div>
+            
+                                    <div class="card-body">
+                                      
+                              <p class="card-text text-capitalize">Healthrow Airport .<span class="text-uppercase">SUV</span></p>
+
+                              <h5 class="card-title ">Volvo XC90 <span class="fw-normal">or similar</span></h5>
+                              <p class="text-dark mt-2"><i class="fa-solid fa-user"></i><span class="ms-2">4</span><i class="fa-solid fa-briefcase ms-2"></i><span class="ms-2">1</span><i class="fa-solid fa-car ms-2"></i><span class="ms-2">Automatic</span> <i class="fa-solid fa-gauge-simple-high ms-2"></i><span class="ms-2">Unlimited</span></p>
+                              <p class="fw-bold"><span class="badge text-bg-warning">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                              <p>Starting from <span class="text-primary fw-bold">US$72</span></p>
+            
+                                   </div>
+            
+                                    
+            
+                                    
+            
+                                    
+                                    </div>
+                                    <div class="col-md-3">
+                                      <div class="card h-50" style="border: 1px solid #ccc;">
+                                        <div class="image position-relative text-center">
+                
+                                        <img src="./Images/BMW.jpg" class="card-img-top img-set mt-2" alt="BMW image">
+                                      </div>
+                                      
+                                        <img src="./Images/./car-logos/BMW-logo.jpg" alt="BMW logo" class="img-set-small ms-4">
+                                    </div>
+                
+                                        <div class="card-body">
+                                          
+                              <p class="card-text text-capitalize">Healthrow Airport .<span class="text-uppercase">luxury</span></p>
+
+                              <h5 class="card-title ">BMW 5 Series <span class="fw-normal">or similar</span></h5>
+                              <p class="text-dark mt-2"><i class="fa-solid fa-user"></i><span class="ms-2">4</span><i class="fa-solid fa-briefcase ms-2"></i><span class="ms-2">1</span><i class="fa-solid fa-car ms-2"></i><span class="ms-2">Automatic</span> <i class="fa-solid fa-gauge-simple-high ms-2"></i><span class="ms-2">Unlimited</span></p>
+                              <p class="fw-bold"><span class="badge text-bg-warning">4.8</span> Exceptional <span class="fw-normal">3,014 reviews</span></p>
+                              <p>Starting from <span class="text-primary fw-bold">US$72</span></p>
+                                       </div>
+                
+                                        
+                
+                                        
+                
+                                        
+                                        </div>
+                            
+                      </div>
+                    </div>
+    </div>
+                    
+      <!-- Popular Car Hire End -->
+
+
+      <!-- Featured Cruise Deals Start -->
+      <div class="container-md">
+        <h3 class=" mt-5 ">Trending Activities </h3>
+     <p class=" mb-5">Interdum et malesuda fames ac ante ipsum<span style="margin-left: 920px;">   <button type="button" class="btn btn-outline-dark">More</button>
+     </span> </p>
+    
+        <div class="col-md-12">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-md-3">
+                  <div class="card h-100">
+                    <div class="image position-relative">
+
+                    <img src="./Images/Cruise.jpg" class="card-img-top" alt="Cruise Image" height="203px">
+                  </div>
+
+                    <div class="text-uppercase position-absolute bg-primary text-light fw-normal" style="top: 20px;">Cruise Only</div>
+                    <div class="card-body">
+                      <p class="card-text text-capitalize">Norwegian Gateway</p>
+                      <h5 class="card-title text-capitalize">7 Night Cruise to western Mediterranean</h5>
+                      <p class="ps-1"><span class="ps-0">Selling Date</span> <span>Departs</span> <span>Ports(7)</span></p>
+                      <p class="ps-2"><span class="ps-0">18/06/2022</span><span>Southampton</span><span>SeteToulan..</span></p>
+
+                      
+                      <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 94 reviews</span> 4.82
+                       <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card h-100 position-relative">
+                    <img src="./Images/Cruise 1 (1).jpg" class="card-img-top" alt="Cruise-1 image">
+                    <!-- <div class="text-uppercase position-absolute bg-primary fw-bold" style="top: 20px;">BreakFast Included</div> -->
+
+                    <div class="card-body">
+                      <p class="card-text text-capitalize">6+ hours</p>
+                      <h5 class="card-title text-capitalize text-decoration-underline ">Edinburgh Sky to sea bike tour by manual or E-bike</h5>
+                      <p class="card-text text-capitalize">Ciutat vella , Barcelona</p>
+                      <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 94 reviews</span> 4.82
+                        <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                     
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card h-100 position-relative">
+                    <img src="./Images/Cruise 2.jpg" class="card-img-top" alt="cruise-2 image" height="203px">
+                    <div class="text-uppercase position-absolute bg-primary fw-normal text-light" style="top: 20px;">Best Seller</div>
+
+                    <div class="card-body">
+                      <p class="card-text text-capitalize">6+ hours</p>
+                      <h5 class="card-title text-capitalize">Natural cystal blue ice cave tour of vatnajokull glacier</h5>
+                      <p class="card-text text-capitalize"> Manhathan , newyork</p>
+                      <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 94 reviews</span> 4.82
+                        <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 position-relative">
+                      <img src="./Images/Cruise 3.jpg" class="card-img-top" alt="Cruise-3 images" height="203px">
+                    <div class="text-uppercase position-absolute text bg-warning fw-normal" style="top: 20px;">Top Rated</div>
+
+                      <div class="card-body">
+                        <p class="card-text text-capitalize">6+ hours</p>
+                        <h5 class="card-title">Soth coast full day tour by minibus from Reykjavik</h5>
+                        <p class="card-text text-capitalize">vaticona prati ,Rome</p>
+                        <p class="fw-bold"><span class="text-warning"><i class="fa-solid fa-star fa-xs"></i></span><span class="fw-normal"> 94 reviews</span> 4.82
+                          <span class="fw-normal ms-2">From</span>  <span class=" fw-bold">US$72</span></p>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+              </div>
+        </div>
+      </div>
+       <!-- Featured Cruise Deals End -->
+
+
+       <!-- Popular Routes Start -->
+ <div class="container-md">
+        <h3 class=" mt-5 ">Popular Routes </h3>
+     <p class=" mb-5">Interdum et malesuda fames ac ante ipsum<span style="margin-left: 920px;">   <button type="button" class="btn btn-outline-dark">More</button>
+     </span> </p>
+
+     <div class="popularRoutes">
+          
+      
+      <div class="row mb-4" style="border: solid 1px #ccc;">
+          <div class="col-md-1">
+
+          </div>
+          <div class="col-md-1">
+            <div class="row">
+
+              14:00
+          </div>
+          <div class="row">
+              SAW
+          </div>
+          </div>
+          <div class="col-md-2">
+            <div class="row">
+              ----------------
+            </div>
+            <div class="row">
+              <p style="font-size: small;">4h 05m-Nonstop</p>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="row">
+              22:00
+            </div>
+            <div class="row">
+              STN
+            </div>
+          </div>
+          <div class="col-md-1">
+
+          </div>
+          <div class="col-md-1">
+            <div class="row">
+              14:00
+            </div>
+            <div class="row">
+              SAW
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="row">
+              ----------------
+            </div>
+            <div class="row">
+             <p style="font-size: small;">4h 05m-Nonstop</p> 
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="row">
+              22:00
+            </div>
+            <div class="row">
+              STN
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="row">
+
+            US$934
+          </div>
+          <div class="row">
+            16 deals
+          </div>
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-outline-dark">View Deal</button>
+
+          </div>
+      </div>
+      <div class="row mb-4" style="background-color: #ccc;" >
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-1">
+          <div class="row">
+
+            14:00
+        </div>
+        <div class="row">
+            SAW
+        </div>
+        </div>
+        <div class="col-md-2">
+          <div class="row">
+            ----------------
+          </div>
+          <div class="row">
+            <p style="font-size: small;">4h 05m-Nonstop</p>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="row">
+            22:00
+          </div>
+          <div class="row">
+            STN
+          </div>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-1">
+          <div class="row">
+            14:00
+          </div>
+          <div class="row">
+            SAW
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="row">
+            ----------------
+          </div>
+          <div class="row">
+           <p style="font-size: small;">4h 05m-Nonstop</p> 
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="row">
+            22:00
+          </div>
+          <div class="row">
+            STN
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="row">
+
+          US$934
+        </div>
+        <div class="row">
+          16 deals
+        </div>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-outline-dark">View Deal</button>
+
+        </div>
+    </div>
+    <div class="row mb-4" style="border: solid 1px #ccc;">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-1">
+        <div class="row">
+
+          14:00
+      </div>
+      <div class="row">
+          SAW
+      </div>
+      </div>
+      <div class="col-md-2">
+        <div class="row">
+          ----------------
+        </div>
+        <div class="row">
+          <p style="font-size: small;">4h 05m-Nonstop</p>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="row">
+          22:00
+        </div>
+        <div class="row">
+          STN
+        </div>
+      </div>
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-1">
+        <div class="row">
+          14:00
+        </div>
+        <div class="row">
+          SAW
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="row">
+          ----------------
+        </div>
+        <div class="row">
+         <p style="font-size: small;">4h 05m-Nonstop</p> 
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="row">
+          22:00
+        </div>
+        <div class="row">
+          STN
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="row">
+
+        US$934
+      </div>
+      <div class="row">
+        16 deals
+      </div>
+      </div>
+      <div class="col-md-1">
+        <button type="button" class="btn btn-outline-dark">View Deal</button>
+
+      </div>
+  </div>
+  <div class="row" style="border: solid 1px #ccc;">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-1">
+      <div class="row">
+
+        14:00
+    </div>
+    <div class="row">
+        SAW
+    </div>
+    </div>
+    <div class="col-md-2">
+      <div class="row">
+        ----------------
+      </div>
+      <div class="row">
+        <p style="font-size: small;">4h 05m-Nonstop</p>
+      </div>
+    </div>
+    <div class="col-md-1">
+      <div class="row">
+        22:00
+      </div>
+      <div class="row">
+        STN
+      </div>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-1">
+      <div class="row">
+        14:00
+      </div>
+      <div class="row">
+        SAW
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="row">
+        ----------------
+      </div>
+      <div class="row">
+       <p style="font-size: small;">4h 05m-Nonstop</p> 
+      </div>
+    </div>
+    <div class="col-md-1">
+      <div class="row">
+        22:00
+      </div>
+      <div class="row">
+        STN
+      </div>
+    </div>
+    <div class="col-md-1">
+      <div class="row">
+
+      US$934
+
+    </div>
+    <div class="row">
+      16 deals
+    </div>
+    </div>
+    <div class="col-md-1">
+      <button type="button" class="btn btn-outline-dark">View Deal</button>
+
+    </div>
+</div>
+
+
+     
+
+      </div>
+ </div>
+
+        <!-- Popular Routes End -->
+
+<!-- Footer Start -->
+      <footer>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-1">
+              <img src="./Images/Screenshot 2024-07-28 104717.png" alt="Go Trip Logo" width="60%">
+            </div>
+            <div class="col-md-5">
+              <p class="fw-bold text-capitalize fs-2">Go Trip</p>
+            </div>
+
+            <div class="col-md-6">
+              <p>Get Updates and More</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <p class="text-capitalize">  Toll Freee customer care </p>
+            </div>
+            <div class="col-md-3">
+              <p class="text-capitalize">Need Live Support</p>
+            </div>
+            <div class="col-md-6">
+              <input type="email" placeholder="Your Email" width="100%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <p class="text-capitalize fw-bold">  You are all in one Travel</p>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="col-md-2">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                 
+
+                  
+                </div>
+              
+           
+           
+            </div>
+          </div>
+        </div>
+
+      </footer>
+ <!-- Footer End -->
+
+
+
+
+   <!-- JavaScript links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
